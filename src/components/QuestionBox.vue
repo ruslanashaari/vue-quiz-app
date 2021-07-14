@@ -39,3 +39,12 @@
 		},
 	}
 </script>
+
+<style scoped>
+	.list-group {
+		margin-bottom: 30px;
+	}
+	.btn {
+		margin: 0 5px;
+	}
+</style>
