@@ -32,7 +32,7 @@
 			answers() {
 				let answers = [...this.currentQuestion.incorrect_answers]
 
-				answers.push(this.currentQuestion.correct_answers)
+				answers.push(this.currentQuestion.correct_answer)
 
 				return answers				
 			}
