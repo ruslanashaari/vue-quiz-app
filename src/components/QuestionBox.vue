@@ -2,7 +2,7 @@
 	<div class="question-box-container">
 		<b-jumbotron lead="Bootstrap 4 Components for Vue.js 2">
 			<template slot="lead">
-				{{ currentQuestion.question }}
+				<span v-html="currentQuestion.question"></span>
 			</template>
 
 			<hr class="my-4" />
@@ -12,6 +12,7 @@
 					v-for="(answer, index) in answers" 
 					:key="index"
 					@click="selectAnswer(index)"
+					:class="[selectedIndex === index ? 'selected' : '']"
 				>
 					{{ answer }}						
 				</b-list-group-item>
@@ -63,5 +64,17 @@
 
 	.btn {
 		margin: 0 5px;
+	}
+
+	.selected {
+		background-color: lightblue;
+	}
+
+	.correct {
+		background-color: lightgreen;
+	}
+
+	.incorrect {
+		background-color: red;
 	}
 </style>
