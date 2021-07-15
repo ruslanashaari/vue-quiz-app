@@ -55,6 +55,12 @@
 	.list-group {
 		margin-bottom: 30px;
 	}
+
+	.list-group-item:hover {
+		background: #EEE;
+		cursor: pointer;
+	}
+
 	.btn {
 		margin: 0 5px;
 	}
